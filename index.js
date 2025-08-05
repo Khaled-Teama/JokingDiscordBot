@@ -2,7 +2,6 @@ const {token} = require(`./config.json`);
 const {Client,Events,GatewayIntentBits} = require(`discord.js`);
 
 const client = new Client ({intents : [GatewayIntentBits.Guilds,GatewayIntentBits.GuildMessages,
-    GatewayIntentBits.Guilds
 ]});
 
 const pingC = require(`./Commands/CommandsForHelp/ping`);
