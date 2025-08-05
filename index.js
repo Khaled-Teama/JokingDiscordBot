@@ -5,12 +5,14 @@ const client = new Client ({intents : [GatewayIntentBits.Guilds,GatewayIntentBit
     GatewayIntentBits.Guilds
 ]});
 
-client.once(Events.ClientReady,(ready) => {
+client.once(Events.ClientReady,(client) => {
 
-    console.log(`Hi Khaloody now i am ready for joking : ${ready.user.tag}`)
+    console.log(`Hi Khaloody now i am ready for joking : ${client.user.tag}`)
 
 });
 
 client.login(token);
+
+
 
 
